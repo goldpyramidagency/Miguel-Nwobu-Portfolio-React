@@ -13,6 +13,7 @@ import { ProjectSinglePage } from './components/ProjectSinglePage';
 import { BlogArchivePage } from './components/BlogArchivePage';
 import { BlogSinglePage } from './components/BlogSinglePage';
 import { Footer } from './components/Footer';
+import { BackToTop } from './components/BackToTop';
 
 import { ProjectModal } from './components/ProjectModal';
 import { CVModal } from './components/CVModal';
@@ -240,6 +241,9 @@ export default function App() {
 
       {/* Footer */}
       <Footer />
+
+      {/* Floating Back To Top Button */}
+      <BackToTop />
 
       {/* Modals & Drawers */}
       <ProjectModal 

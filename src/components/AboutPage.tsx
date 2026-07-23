@@ -36,7 +36,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenContact, onOpenCV })
         <span className="absolute -top-12 left-0 font-['Fraunces'] text-[14vw] md:text-[10vw] faded-text select-none uppercase tracking-tighter pointer-events-none">
           ABOUT
         </span>
-        <div className="max-w-4xl relative z-10">
+        <div className="max-w-4xl mx-auto relative z-10">
           <h1 className="font-['Fraunces'] text-[26px] md:text-[52px] leading-[1.15] tracking-[-0.02em] font-normal text-[#F3EDE4] mb-6">
             Hi, I'm Miguel. I specialize in <span className="text-[#f2afff] italic font-['Fraunces']">engineering</span> high-impact growth systems that turn curiosity into revenue.
           </h1>
@@ -65,20 +65,20 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenContact, onOpenCV })
               </span>
             </button>
           </div>
+        </div>
 
-          {/* Cinematic Low-Key Portrait */}
-          <div className="w-full h-[480px] md:h-[620px] grayscale hover:grayscale-0 transition-all duration-700 bg-[#1d1b16] overflow-hidden border border-[#8F8A86]/10 relative group rounded-xs shadow-2xl">
-            <img 
-              src="https://indigo-tarsier-483796.hostingersite.com/wp-content/uploads/2026/04/You-hve-a-monster-locked-within.png" 
-              alt="Miguel Nwobu - Full Stack Growth Marketer Portrait" 
-              className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
-              style={{ objectPosition: 'center 22%' }}
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0A0908] via-transparent to-transparent opacity-75" />
-            <div className="absolute bottom-6 left-6 font-['IBM_Plex_Mono'] text-xs text-[#8F8A86] uppercase tracking-widest flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-[#7A1A94] animate-pulse"></span>
-              Miguel Nwobu • Full Stack Growth Marketer
-            </div>
+        {/* Centralized Cinematic Low-Key Portrait Container */}
+        <div className="w-full max-w-4xl mx-auto h-[480px] md:h-[620px] grayscale hover:grayscale-0 transition-all duration-700 bg-[#1d1b16] overflow-hidden border border-[#8F8A86]/10 relative group rounded-xs shadow-2xl">
+          <img 
+            src="https://indigo-tarsier-483796.hostingersite.com/wp-content/uploads/2026/04/You-hve-a-monster-locked-within.png" 
+            alt="Miguel Nwobu - Full Stack Growth Marketer Portrait" 
+            className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
+            style={{ objectPosition: 'center 35%' }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0908] via-transparent to-transparent opacity-75" />
+          <div className="absolute bottom-6 left-6 font-['IBM_Plex_Mono'] text-xs text-[#8F8A86] uppercase tracking-widest flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-[#7A1A94] animate-pulse"></span>
+            Miguel Nwobu • Full Stack Growth Marketer
           </div>
         </div>
       </section>
